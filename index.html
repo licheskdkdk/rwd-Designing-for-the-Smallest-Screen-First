@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghibli Theme - Mobile-First Demo</title>
+  <style>
+    /* --- Base Mobile Styles (default for small screens) --- */
+    body {
+        font-family: "Trebuchet MS", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: #F4EDD3;
+        color: #333;
+    }
+
+   
+    header {
+      
+        background: url('g.jpg') center/cover no-repeat;
+        color: white;
+        text-align: center;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        font-family: "Georgia", serif;
+        font-size: 40px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #F4EDD3; 
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+        margin: 0;
+        padding: 40px 0;
+    }
+
+
+    nav {
+        background: rgba(126, 153, 163, 0.7);
+        padding: 7px;
+        backdrop-filter: blur(0px);
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center; 
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        opacity: 0.9;
+    }
+
+    nav a:hover {
+        background: #F4EDD3;
+        color: #4C585B;
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        
+    }
+
+    
+    footer {
+        background: linear-gradient(135deg, #4C585B, #7E99A3, #A5BFCC);
+        color: white;
+        text-align: center;
+        padding: 13px;
+        font-family: "Georgia", serif;
+    }
+
+    
+    main {
+        padding: 16px;
+    }
+
+    article {
+        background: #A5BFCC; /* light blue-gray */
+        padding: 32px;
+        border-radius: 16px;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        border: 2px solid #7E99A3; /* subtle border */
+  
+    }
+
+    article img {
+        max-width: 100%;
+        border-radius: 12px;
+        margin-bottom: 16px;
+    }
+
+    article h2 {
+        font-family: "Georgia", serif;
+        margin-top: 8px;
+        color: #4C585B;
+    }
+
+    /* --- Media Query for larger screens (Desktop) --- */
+    @media (min-width: 768px) {
+        nav ul {
+            flex-direction: row;
+            justify-content: center;
+            gap: 200px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        body {
+            font-size: 18px;
+        }
+
+        article {
+            padding: 32px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            padding: 60px 0;
+        }
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>KiKi’s Journey</h1>
+
+  </header>
+
+    <main>
+        <article>
+            <h2>^^</h2>
+            <img src="https://i.pinimg.com/736x/e1/a4/62/e1a46261046a2512b317bad114d6c82c.jpg" alt="Ghibli Theme " height="300px" width="400px">   
+            <p>Kiki is a young witch from Studio Ghibli’s classic film <em>Kiki’s Delivery Service</em>. At just thirteen years old, she leaves home with her talking cat Jiji to find her place in the world. With her broomstick, she starts a small delivery service in a seaside town, learning about independence, friendship, and self-confidence along the way. Kiki’s story inspires us to believe in ourselves, even when times get tough.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; LY LYE LAY | 2025 | ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>
